@@ -1,0 +1,38 @@
+MEMORY USAGE ANALYSIS
+==================================================
+Memory Limit: 524,544 bits = 64.031 KB
+
+Predictor Memory Usage:
+--------------------------------------------------
+Gshare (13-bit)         2.002 KB (  3.1%) ✅ PASS
+Tournament (9:10:10)    1.751 KB (  2.7%) ✅ PASS
+Custom (14+13+12)       7.002 KB ( 10.9%) ✅ PASS
+
+Detailed Breakdown:
+--------------------------------------------------
+Gshare (13-bit):
+  PHT: 8,192 entries × 2 bits = 16,384 bits
+  Global History: 13 bits
+  Total: 16,397 bits = 2.002 KB
+
+Tournament (9:10:10):
+  Global PHT: 512 entries × 2 bits = 1,024 bits
+  Local History: 1,024 entries × 10 bits = 10,240 bits
+  Local PHT: 1,024 entries × 2 bits = 2,048 bits
+  Choice PHT: 512 entries × 2 bits = 1,024 bits
+  Global History: 9 bits
+  Total: 14,345 bits = 1.751 KB
+
+Custom (14+13+12):
+  Gshare PHT: 16,384 entries × 2 bits = 32,768 bits
+  Bimodal PHT: 8,192 entries × 2 bits = 16,384 bits
+  Choice PHT: 4,096 entries × 2 bits = 8,192 bits
+  Global History: 14 bits
+  Total: 57,358 bits = 7.002 KB
+
+Memory Constraint Verification:
+--------------------------------------------------
+✅ Custom predictor fits within memory limit
+📊 Used: 7.002 KB / 64.031 KB (10.9%)
+🆓 Remaining: 57.030 KB
+💡 Optimization opportunity: Could use larger tables

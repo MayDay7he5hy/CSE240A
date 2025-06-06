@@ -1,0 +1,27 @@
+
+============================================================
+PERFORMANCE ANALYSIS REPORT
+============================================================
+
+📊 CUSTOM PREDICTOR PERFORMANCE:
+  fp_1: 1.427%
+  fp_2: 19.609%
+  int_1: 13.735%
+  int_2: 0.648%
+  mm_1: 9.461%
+  mm_2: 9.464%
+  Average: 9.057%
+
+🆚 CUSTOM vs GSHARE:
+  Custom wins: 2/6 traces
+  ❌ Custom loses to Gshare in majority of traces
+
+🆚 CUSTOM vs TOURNAMENT:
+  Custom wins: 0/6 traces
+  ❌ Custom loses to Tournament in majority of traces
+
+🎯 SCORING PREDICTION:
+  vs Gshare: 0/15 points
+  vs Tournament: 0/15 points
+  Total Custom Score: 0/30 points
+  ⚠️  NEEDS IMPROVEMENT

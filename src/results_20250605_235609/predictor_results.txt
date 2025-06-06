@@ -1,0 +1,150 @@
+Branch Predictor Performance Results
+Generated on Thu Jun  5 23:56:09 PDT 2025
+Test Suite Version: Complete
+=======================================
+
+=== STATIC PREDICTOR ===
+Testing fp_1 with Static predictor:
+Branches:           1546797
+Incorrect:           187589
+Misprediction Rate:  12.128
+
+Testing fp_2 with Static predictor:
+Branches:           2422049
+Incorrect:          1025735
+Misprediction Rate:  42.350
+
+Testing int_1 with Static predictor:
+Branches:           3771697
+Incorrect:          1664686
+Misprediction Rate:  44.136
+
+Testing int_2 with Static predictor:
+Branches:           3755315
+Incorrect:           206849
+Misprediction Rate:   5.508
+
+Testing mm_1 with Static predictor:
+Branches:           3014850
+Incorrect:          1518079
+Misprediction Rate:  50.353
+
+Testing mm_2 with Static predictor:
+Branches:           2563897
+Incorrect:           949796
+Misprediction Rate:  37.045
+
+
+=== GSHARE PREDICTOR (13 bits) ===
+Testing fp_1 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           1546797
+Incorrect:            12765
+Misprediction Rate:   0.825
+
+Testing fp_2 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           2422049
+Incorrect:            40641
+Misprediction Rate:   1.678
+
+Testing int_1 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           3771697
+Incorrect:           521958
+Misprediction Rate:  13.839
+
+Testing int_2 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           3755315
+Incorrect:            15776
+Misprediction Rate:   0.420
+
+Testing mm_1 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           3014850
+Incorrect:           201871
+Misprediction Rate:   6.696
+
+Testing mm_2 with Gshare predictor:
+Gshare predictor initialized with 13 bits history, 8192 entries
+Branches:           2563897
+Incorrect:           259929
+Misprediction Rate:  10.138
+
+
+=== TOURNAMENT PREDICTOR (9:10:10) ===
+Testing fp_1 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           1546797
+Incorrect:            15329
+Misprediction Rate:   0.991
+
+Testing fp_2 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           2422049
+Incorrect:            78619
+Misprediction Rate:   3.246
+
+Testing int_1 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           3771697
+Incorrect:           476073
+Misprediction Rate:  12.622
+
+Testing int_2 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           3755315
+Incorrect:            15980
+Misprediction Rate:   0.426
+
+Testing mm_1 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           3014850
+Incorrect:            77802
+Misprediction Rate:   2.581
+
+Testing mm_2 with Tournament predictor:
+Tournament predictor initialized: global=9, local=10, index=10
+Branches:           2563897
+Incorrect:           217501
+Misprediction Rate:   8.483
+
+
+=== CUSTOM HYBRID PREDICTOR ===
+Testing fp_1 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           1546797
+Incorrect:            12810
+Misprediction Rate:   0.828
+
+Testing fp_2 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           2422049
+Incorrect:            27804
+Misprediction Rate:   1.148
+
+Testing int_1 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           3771697
+Incorrect:           442640
+Misprediction Rate:  11.736
+
+Testing int_2 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           3755315
+Incorrect:            13364
+Misprediction Rate:   0.356
+
+Testing mm_1 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           3014850
+Incorrect:           124933
+Misprediction Rate:   4.144
+
+Testing mm_2 with Custom predictor:
+Custom super-gshare initialized (16 bits, 65536 entries)
+Branches:           2563897
+Incorrect:           183851
+Misprediction Rate:   7.171
+
